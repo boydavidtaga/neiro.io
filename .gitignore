@@ -4,6 +4,7 @@
 
 _site/
 .sass-cache/
+public
 
 #####=== Vim ===#####
 [._]*.s[a-w][a-z]

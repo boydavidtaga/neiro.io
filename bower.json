@@ -6,5 +6,8 @@
     "neiro <neiro.mail@gmail.com>"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "fontawesome": "~4.3.0"
+  }
 }
