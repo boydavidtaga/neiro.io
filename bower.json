@@ -1,0 +1,10 @@
+{
+  "name": "neiro.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ne1ro/neiro.io",
+  "authors": [
+    "neiro <neiro.mail@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true
+}

@@ -10,3 +10,5 @@ github_username:  ne1ro
 
 # Build settings
 markdown: kramdown
+
+exclude: [bower.json, LICENSE]
