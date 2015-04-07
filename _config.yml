@@ -1,0 +1,12 @@
+# Site settings
+title: neiro λ Ruby, Javascript web developer
+email: neiro.mail@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  My personal website, blog and portfolio
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://neiro.io" # the base hostname & protocol for your site
+twitter_username: ne1ro
+github_username:  ne1ro
+
+# Build settings
+markdown: kramdown
