@@ -34,7 +34,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.0.7)
-    execjs (2.5.0)
+    execjs (2.5.2)
     fast-stemmer (1.0.2)
     fastimage (1.6.8)
       addressable (~> 2.3, >= 2.3.5)
