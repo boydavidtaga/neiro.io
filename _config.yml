@@ -12,3 +12,8 @@ github_username:  ne1ro
 markdown: kramdown
 
 exclude: [bower.json, LICENSE, Gemfile, Guardile, Gemfile.lock]
+
+# Jekyll assets configuration
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass

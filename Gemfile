@@ -14,4 +14,5 @@ group :development do
   gem 'compass'
   gem 'susy'
   gem 'bourbon'
+  gem 'uglifier'
 end
