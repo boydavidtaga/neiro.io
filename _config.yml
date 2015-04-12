@@ -11,7 +11,18 @@ github_username:  ne1ro
 # Build settings
 markdown: kramdown
 
-exclude: [bower.json, LICENSE, Gemfile, Guardile, Gemfile.lock, vendor]
+exclude:
+  - bower.json
+  - LICENSE
+  - Gemfile
+  - Guardile
+  - Gemfile.lock
+  - vendor
+
+gems:
+  - jekyll-assets
+
+safe: false
 
 # Jekyll assets configuration
 assets:
