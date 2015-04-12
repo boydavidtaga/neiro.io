@@ -1,4 +1,4 @@
 ### neiro.io
-My personal website.  
+My personal website.
 
-Type `jekyll serve` to start.
+Type `bundle install && jekyll serve` to start.
