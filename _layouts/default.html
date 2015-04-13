@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    {% stylesheet app %}
-  </head>
-
+  {% include head.html %}
   <body>
-    <header>
-    </header>
+    {% include header.html %}
 
-    <div id="content">
+    <div class="content">
       <div class="container">
         {{ content }}
       </div>
     </div>
 
-    <footer>
-      <p>Created by neiro © 2015</p>
-    </footer>
-
+    {% include footer.html %}
     {% javascript app %}
   </body>
 
