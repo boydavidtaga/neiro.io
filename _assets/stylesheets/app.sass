@@ -1,5 +1,5 @@
-@import 'compass/layout/sticky-footer'
 @import 'susy'
+@import 'compass/layout/sticky-footer'
 @import 'normalize-scss'
 
 @include sticky-footer(54px, "footer")
@@ -9,6 +9,7 @@ body
 
 .content
   @include container(80em)
+  min-height: span(3 of 9)
 
 header
   background-color: green
