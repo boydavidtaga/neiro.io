@@ -25,9 +25,11 @@
 
 guard 'livereload' do
   watch(/.*/)
+  ignore(/.sass-cache/)
 end
 
 guard 'jekyll_plus', serve: true do
   watch(/.*/)
   ignore(/^_site/)
+  ignore(/.sass-cache/)
 end

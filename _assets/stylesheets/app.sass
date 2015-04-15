@@ -1,2 +1,11 @@
-p
-  font-family: Helvetica, sans
+@import 'susy'
+
+.content
+  @include container(80em)
+
+header
+  margin: 0
+  padding: 0
+  background-color: green
+  color: white
+  @include span(12)
