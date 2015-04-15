@@ -23,4 +23,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-bacon'
   gem 'rails-assets-slideout.js'
+  gem 'rails-assets-normalize-scss'
 end
