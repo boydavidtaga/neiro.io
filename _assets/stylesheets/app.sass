@@ -1,13 +1,22 @@
-@import 'compass'
+@import 'compass/layout/sticky-footer'
 @import 'susy'
 @import 'normalize-scss'
+
+@include sticky-footer(54px, "footer")
+
+body
+  font-family: Helvetica Neue, Arial, Roboto, sans-serif
 
 .content
   @include container(80em)
 
 header
-  margin: 0
-  padding: 0
+  background-color: green
+  color: white
+  @include span(12)
+  margin-top: -22px
+
+footer
   background-color: green
   color: white
   @include span(12)
