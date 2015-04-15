@@ -1,1 +1,1 @@
-console.log('It it working?');
+//=require 'jquery'

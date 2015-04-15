@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'bundler'
 
 group :development do
+  gem 'jekyll'
   gem 'jekyll-assets', require: true
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
@@ -15,4 +16,11 @@ group :development do
   gem 'susy'
   gem 'bourbon'
   gem 'uglifier'
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-fontawesome'
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-bacon'
+  gem 'rails-assets-slideout.js'
 end
