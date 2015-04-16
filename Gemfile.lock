@@ -40,6 +40,8 @@ GEM
     fastimage (1.6.8)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.8)
+    font-awesome-sass (4.3.2.1)
+      sass (~> 3.2)
     formatador (0.2.5)
     guard (2.12.5)
       formatador (>= 0.2.4)
@@ -122,7 +124,6 @@ GEM
     rack (1.6.0)
     rails-assets-bacon (0.7.53)
     rails-assets-decouple (0.0.1)
-    rails-assets-fontawesome (4.3.0)
     rails-assets-jquery (2.1.3)
     rails-assets-normalize-scss (3.0.2)
     rails-assets-slideout.js (0.1.6)
@@ -171,13 +172,13 @@ DEPENDENCIES
   bourbon
   bundler
   compass
+  font-awesome-sass
   guard
   guard-jekyll-plus
   guard-livereload (~> 2.4)
   jekyll
   jekyll-assets
   rails-assets-bacon!
-  rails-assets-fontawesome!
   rails-assets-jquery!
   rails-assets-normalize-scss!
   rails-assets-slideout.js!

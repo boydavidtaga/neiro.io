@@ -16,10 +16,10 @@ group :development do
   gem 'susy'
   gem 'bourbon'
   gem 'uglifier'
+  gem 'font-awesome-sass'
 end
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-fontawesome'
   gem 'rails-assets-jquery'
   gem 'rails-assets-bacon'
   gem 'rails-assets-slideout.js'
