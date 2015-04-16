@@ -1,23 +1,36 @@
-@import 'susy'
-@import 'compass/layout/sticky-footer'
 @import 'normalize-scss'
+@import 'compass/layout/sticky-footer'
+@import 'susy'
 
 @include sticky-footer(54px, "footer")
 
 body
   font-family: Helvetica Neue, Arial, Roboto, sans-serif
 
-.content
-  @include container(80em)
-  min-height: span(3 of 9)
+h1,h2,h3
+  text-align: center
 
 header
   background-color: green
   color: white
   @include span(12)
   margin-top: -22px
+  background-image: url(image_path('blurry_garden.png'))
+  min-height: 50%
 
 footer
-  background-color: green
   color: white
-  @include span(12)
+  background-image: url(image_path('blurry_garden.png'))
+
+.content
+  @include container(80em)
+  min-height: 75%
+
+.shadow
+  background-color: rgba(0, 0, 0, 0.5)
+  position: absolute
+  width: 100%
+  height: 100%
+
+.text-center
+  text-align: center
