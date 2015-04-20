@@ -23,3 +23,11 @@ exclude:
 assets:
   js_compressor: uglifier
   css_compressor: sass
+
+navigation:
+  - title: Blog
+    url: /index.html
+  - title: Projects
+    url: /projects.html
+  - title: About me
+    url: /about.html
