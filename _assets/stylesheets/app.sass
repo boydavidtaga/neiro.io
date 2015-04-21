@@ -1,5 +1,4 @@
 @import 'normalize-scss'
-@import 'compass/utilities/general/clearfix'
 @import 'compass/css3/transition'
 @import 'compass/layout/sticky-footer'
 @import 'susy'
@@ -50,8 +49,8 @@ a
 
 
 nav
-  @include clearfix
-  padding: 0.5em 1em
+  @include span(12)
+  padding: 1em
 
   i
     display: inline-block
@@ -76,12 +75,12 @@ nav
 
 
 header
-  @include clearfix
+  @include span(12)
   background-color: green
   color: white
   background-image: url(image_path('blurry_garden.png'))
   width: 100%
-  min-height: 13em
+  min-height: 15em
 
 
 footer
