@@ -31,3 +31,5 @@ navigation:
     url: /projects.html
   - title: About me
     url: /about.html
+  - title: Contact
+    url: /contact.html
