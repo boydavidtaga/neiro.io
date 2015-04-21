@@ -1,4 +1,5 @@
 @import 'normalize-scss'
+@import 'compass/utilities/general/clearfix'
 @import 'compass/css3/transition'
 @import 'compass/layout/sticky-footer'
 @import 'susy'
@@ -49,6 +50,7 @@ a
 
 
 nav
+  @include clearfix
   padding: 0.5em 1em
 
   i
@@ -56,13 +58,16 @@ nav
     &:hover
       @include color-transition($green)
 
-  ul, li
+  ul,li
     display: inline-block
     padding: 0 0 0 1em
     margin: 0
 
     a
       color: $dark
+
+    .first
+      padding-left: 0
 
     .current
       a
@@ -71,6 +76,7 @@ nav
 
 
 header
+  @include clearfix
   background-color: green
   color: white
   background-image: url(image_path('blurry_garden.png'))
