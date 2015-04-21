@@ -4,37 +4,21 @@
 @import 'font-awesome-sprockets'
 @import 'font-awesome'
 
+
 body
   font-family: Helvetica Neue, Arial, Roboto, sans-serif
   font-size: 16pt
   color: #333
   font-weight: 200
 
-nav
-  ul, li
-    display: inline-block
-    margin-top: 0
 
-  a
-    color: #333
-    padding-right: 1em
+h1
+  font-weight: 500
 
-h1,h2,h3
-  text-align: center
+
+h2
   font-weight: 400
 
-header
-  background-color: green
-  color: white
-  background-image: url(image_path('blurry_garden.png'))
-  width: 100%
-  min-height: 15em
-
-footer
-  color: white
-  background-image: url(image_path('blurry_garden.png'))
-  position: relative
-  min-height: 15em
 
 nav
   background: white
@@ -44,10 +28,35 @@ nav
   i
     font-size: 1.5em !important
 
+  ul, li
+    display: inline-block
+    margin-top: 0
+
+  a
+    color: #333
+    padding-right: 1em
+
+
+header
+  background-color: green
+  color: white
+  background-image: url(image_path('blurry_garden.png'))
+  width: 100%
+  min-height: 15em
+
+
+footer
+  color: white
+  background-image: url(image_path('blurry_garden.png'))
+  position: relative
+  min-height: 15em
+
+
 .content
   @include container(65em)
   margin: 0
   min-height: 30em
+
 
 .shadow
   background-color: rgba(0, 0, 0, 0.65)
@@ -55,6 +64,7 @@ nav
   width: 100%
   height: 100%
   z-index: 10
+
 
 .avatar
   border-radius: 50%
@@ -68,6 +78,7 @@ nav
     border-radius: 50%
     width: 5em
     height: 5em
+
 
 .text-center
   text-align: center
