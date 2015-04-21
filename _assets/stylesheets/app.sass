@@ -5,10 +5,14 @@
 @import 'font-awesome'
 
 
+$green: #0c8945
+$dark: #333
+
+
 body
   font-family: Helvetica Neue, Arial, Roboto, sans-serif
   font-size: 16pt
-  color: #333
+  color: $dark
   font-weight: 200
 
 
@@ -20,8 +24,12 @@ h2
   font-weight: 400
 
 
+a
+  &:hover
+    color: $green
+
+
 nav
-  background: white
   height: 0.5em
   padding: 0.5em
 
@@ -33,7 +41,7 @@ nav
     margin-top: 0
 
   a
-    color: #333
+    color: $dark
     padding-right: 1em
 
 
@@ -42,7 +50,7 @@ header
   color: white
   background-image: url(image_path('blurry_garden.png'))
   width: 100%
-  min-height: 15em
+  min-height: 13em
 
 
 footer
