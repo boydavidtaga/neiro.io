@@ -1,5 +1,5 @@
 @import 'normalize-scss'
-@import 'compass'
+@import 'compass/css3/transition'
 @import 'compass/layout/sticky-footer'
 @import 'susy'
 @import 'font-awesome-sprockets'
@@ -39,7 +39,7 @@ h2
 a
   &:hover
     color: $green
-    transition: color .3s ease
+    @include transition(color 0.3s ease-in-out)
 
 
 nav
