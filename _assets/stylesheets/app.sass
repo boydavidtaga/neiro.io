@@ -9,6 +9,8 @@
 
 $green: #0c8945
 $dark: #333
+// Set up Susy
+$susy: (columns: 12)
 
 
 // Calculate font size
@@ -50,27 +52,21 @@ a
 
 
 nav
-  @include span(12)
-  padding: 1em
+  padding: 0.5em
+  @include container(30em)
 
-  i
-    display: inline-block
-    &:hover
-      @include color-transition($green)
-
-  ul,li
-    display: inline-block
-    padding: 0 0 0 1em
+  ul
+    list-style-type: none
     margin: 0
 
-    a
-      color: $dark
+    li
+      float: left
+      width: span(3)
 
-    .first
-      padding-left: 0
-
-    .current
       a
+        color: $dark
+
+      &.current a
         text-decoration: none
         color: $green + #333
 
@@ -92,7 +88,7 @@ footer
 
 
 .content
-  @include container(65em)
+  @include container(60em)
   margin: 0
   min-height: 30em
 
