@@ -60,8 +60,10 @@ nav
     margin: 0
 
     li
-      float: left
-      width: span(3)
+      @include span(3)
+
+      &.last
+        @include span(3 last)
 
       a
         color: $dark
@@ -111,10 +113,11 @@ footer
     top: 0
     content: ''
 
-
   .column
-    float: left
-    width: span(4)
+    @include span(4)
+
+    &.last
+      @include span(4 last)
 
 
 .content

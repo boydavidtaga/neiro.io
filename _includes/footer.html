@@ -8,8 +8,8 @@
             {% assign current = 'current' %}
         {% endif %}
 
-          <li class="{% if forloop.first %}first {% endif %}{{ current }}{% if forloop.last %}last{% endif %}">
-            <a href="{{ link.url }}">{{ link.title }}</a>
+        <li class="{% if forloop.first %}first {% endif %}{{ current }}{% if forloop.last %}last{% endif %}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -23,7 +23,8 @@
     <p class="text-center">Email</p>
   </div>
 
-  <div class="column">
+  <div class="column last">
+    <p class="text-center">Website source on Github</p>
     <p class="text-center">Created by neiro © 2015</p>
   </div>
 </footer>
