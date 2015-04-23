@@ -4,6 +4,7 @@
 @import 'compass/css3/background-size'
 @import 'compass/css3/text-shadow'
 @import 'compass/layout/sticky-footer'
+@import 'compass/css3/text-shadow'
 @import 'susy'
 @import 'font-awesome-sprockets'
 @import 'font-awesome'
@@ -81,6 +82,7 @@ nav
 header
   @include span(12)
   @include background-size(cover)
+  @include text-shadow(0px 1px 1px $dark)
   color: white
   background-image: url(image_path('blurry_garden.png'))
   width: 100%
