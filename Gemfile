@@ -15,7 +15,7 @@ group :development do
   gem 'compass'
   gem 'susy'
   gem 'uglifier'
-  gem 'font-awesome-sass'
+  gem 'font-awesome-sass', '~> 4.3.0'
 end
 
 source 'https://rails-assets.org' do

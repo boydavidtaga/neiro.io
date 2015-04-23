@@ -94,22 +94,21 @@ footer
   padding: 1em
   z-index: 0
 
-  p, span, a, li
+  p, span, li
     margin: 0 0 1em 0
 
   ul
     list-style-type: none
     margin: 0
 
-  li
-    a
-      color: white
-      &:hover
-        @include color-transition($green)
+  a
+    color: white
+    &:hover
+      @include color-transition($green)
 
-    &.current a
-      text-decoration: none
-      color: $green + #333
+  li.current a
+    text-decoration: none
+    color: $green + #333
 
   &:before
     display: block
@@ -160,5 +159,6 @@ footer
 a.icon-link
   display: inline-block
   text-decoration: none
+  margin-bottom: 0
   span
     text-decoration: underline
