@@ -47,6 +47,9 @@ h2
 
 
 a
+  &:visited
+    color: $green - #333
+
   &:hover
     @include color-transition($green)
 
@@ -91,7 +94,7 @@ footer
   padding: 1em
   z-index: 0
 
-  p
+  p, span, a, li
     margin: 0 0 1em 0
 
   ul
@@ -99,7 +102,6 @@ footer
     margin: 0
 
   li
-    margin: 0 0 0.5em 0
     a
       color: white
       &:hover
@@ -153,3 +155,10 @@ footer
 
 .text-center
   text-align: center
+
+
+a.icon-link
+  display: inline-block
+  text-decoration: none
+  span
+    text-decoration: underline
