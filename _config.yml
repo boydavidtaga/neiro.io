@@ -5,8 +5,9 @@ description: > # this means to ignore newlines until "baseurl:"
   My personal website, blog and portfolio
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://neiro.io" # the base hostname & protocol for your site
-twitter_username: ne1ro
-github_username:  ne1ro
+twitter: "https://twitter.com/ne1ro"
+github: "https://github.com/ne1ro"
+linkedin: "https://ru.linkedin.com/in/neiro"
 
 # Build settings
 markdown: kramdown
