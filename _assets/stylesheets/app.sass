@@ -83,17 +83,22 @@ header
 
 
 footer
+  @include font-size(18px)
   @include container()
   color: white
   background-image: url(image_path('blurry_garden.png'))
   position: relative
   padding: 1em
 
+  p
+    margin: 0 0 1em 0
+
   ul
     list-style-type: none
     margin: 0
 
   li
+    margin: 0 0 0.5em 0
     a
       color: white
       &:hover
