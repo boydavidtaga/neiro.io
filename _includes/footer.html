@@ -1,65 +1,66 @@
 <footer id="footer">
-  <div class="column">
-    <ul>
-      {% for link in site.navigation %}
-        {% assign current = nil %}
+  <div class="footer-container">
+    <div class="column">
+      <ul>
+        {% for link in site.navigation %}
+          {% assign current = nil %}
 
-        {% if page.url contains link.url %}
-            {% assign current = 'current' %}
-        {% endif %}
+          {% if page.url contains link.url %}
+              {% assign current = 'current' %}
+          {% endif %}
 
-        <li class="{% if forloop.first %}first {% endif %}{{ current }}{% if forloop.last %}last{% endif %}">
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+          <li class="{% if forloop.first %}first {% endif %}{{ current }}{% if forloop.last %}last{% endif %}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="column">
+      <p>
+        <a class="icon-link" href="{{ site.linkedin }}" target="_blank">
+          <i class="fa fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </p>
+
+      <p>
+        <a class="icon-link" href="{{ site.github }}" target="_blank">
+          <i class="fa fa-github"></i>
+          <span>Github</span>
+        </a>
+      </p>
+
+      <p>
+        <a class="icon-link" href="{{ site.twitter }}" target="_blank">
+          <i class="fa fa-twitter"></i>
+          <span>Twitter</span>
+        </a>
+      </p>
+
+      <p>
+        <a class="icon-link" href="{{ site.email }}" target="_blank">
+          <i class="fa fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </p>
+    </div>
 
 
-  <div class="column">
-    <p>
-      <a class="icon-link" href="{{ site.linkedin }}" target="_blank">
-        <i class="fa fa-linkedin"></i>
-        <span>LinkedIn</span>
-      </a>
-    </p>
+    <div class="column last">
+      <p>Powered by <a class="icon-link" href="https://www.ruby-lang.org/" target="_blank">
+        <i class="fa fa-diamond"></i>
+        <span>Ruby</span>
+      </a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></p>
 
-    <p>
-      <a class="icon-link" href="{{ site.github }}" target="_blank">
-        <i class="fa fa-github"></i>
-        <span>Github</span>
-      </a>
-    </p>
+      <p>
+        <a href="{{ site.source_url }}" target="_blank" class="icon-link">
+          <i class="fa fa-github-alt"></i>
+          <span>Website source</span>
+        </a>
+      </p>
 
-    <p>
-      <a class="icon-link" href="{{ site.twitter }}" target="_blank">
-        <i class="fa fa-twitter"></i>
-        <span>Twitter</span>
-      </a>
-    </p>
-
-    <p>
-      <a class="icon-link" href="{{ site.email }}" target="_blank">
-        <i class="fa fa-envelope"></i>
-        <span>Email</span>
-      </a>
-    </p>
-  </div>
-
-
-  <div class="column last">
-    <p>Powered by <a class="icon-link" href="https://www.ruby-lang.org/" target="_blank">
-      <i class="fa fa-diamond"></i>
-      <span>Ruby</span>
-    </a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a></p>
-
-    <p>
-      <a href="{{ site.source_url }}" target="_blank" class="icon-link">
-        <i class="fa fa-github-alt"></i>
-        <span>Website source</span>
-      </a>
-    </p>
-
-    <p>Created by neiro © 2015</p>
+      <p>Created by neiro © 2015</p>
+    </div>
   </div>
 </footer>
