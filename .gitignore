@@ -6,6 +6,7 @@ _site/
 .sass-cache/
 public
 assets/javascripts/vendor
+_drafts
 
 #####=== Vim ===#####
 [._]*.s[a-w][a-z]
