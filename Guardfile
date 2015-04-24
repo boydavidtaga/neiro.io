@@ -24,7 +24,7 @@
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
 guard 'livereload' do
-  watch(/.*/)
+  watch(/_site/)
   ignore(/.sass-cache/)
 end
 
