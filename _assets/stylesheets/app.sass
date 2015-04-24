@@ -79,24 +79,22 @@ nav
         color: $green + #333
 
 
-header
-  @include span(12)
+header, footer
   @include background-size(cover)
-  @include text-shadow(0px 1px 1px $dark)
-  color: white
   background-image: url(image_path('blurry_garden.png'))
-  width: 100%
-  min-height: 15em
+  color: white
+  position: relative
 
+
+header
+  @include text-shadow(0px 1px 1px $dark)
+  background-position: top
+  padding: 0.25em
 
 
 footer
-  @include background-size(cover)
+  background-position: bottom
   @include font-size(18px)
-  @include container()
-  color: white
-  background-image: url(image_path('blurry_garden.png'))
-  position: relative
   padding: 2em 1em
   z-index: 0
 
