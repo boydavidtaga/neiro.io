@@ -1,0 +1,20 @@
+nav
+  padding: 0.5em
+  @include container(30em)
+
+  ul
+    list-style-type: none
+    margin: 0
+
+    li
+      @include span(3)
+
+      &.last
+        @include span(3 last)
+
+      a
+        color: $dark
+
+      &.current a
+        text-decoration: none
+        color: $green + #333

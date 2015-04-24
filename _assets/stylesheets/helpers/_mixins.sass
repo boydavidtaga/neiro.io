@@ -1,0 +1,10 @@
+// Apply font size function
+@mixin font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+
+// Change color with transition animation
+@mixin color-transition($color)
+  color: $color
+  @include transition(color 0.25s ease-in-out)
