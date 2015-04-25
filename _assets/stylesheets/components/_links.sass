@@ -1,3 +1,5 @@
+@include link-colors($dark, $green, $green + $dark, white - $dark, $green)
+
 a
   &.icon-link
     display: inline-block
@@ -5,9 +7,6 @@ a
     margin-bottom: 0
     span
       text-decoration: underline
-
-  &:visited
-    color: #aaa
 
   &:hover
     @include color-transition($green)
