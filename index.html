@@ -2,3 +2,13 @@
 layout: default
 title: Web development, functional programming
 ---
+
+{% for post in site.posts %}
+  <article>
+    <h1 class="text-center">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    <p class="text-right date">{{ post.date | | date: '%d %B, %Y' }}</p>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}
