@@ -3,13 +3,15 @@
   {% include head.html %}
   
   <body>
-    {% include nav.html %}
-    {% include header.html %}
+    <div class="wrapper" id="root">
+      {% include nav.html %}
+      {% include header.html %}
 
-    <main id="root">
-      {{ content }}
-      <div id="root_footer"></div>
-    </main>
+      <main>
+        {{ content }}
+        <div id="root_footer"></div>
+      </main>
+    </div>
 
     {% include footer.html %}
     {% javascript app %}
