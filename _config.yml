@@ -28,10 +28,10 @@ assets:
 
 navigation:
   - title: Blog
-    url: /index.html
+    url: /
   - title: Projects
-    url: /projects.html
+    url: /projects
   - title: About me
-    url: /about.html
+    url: /about
   - title: Contact
-    url: /contact.html
+    url: /contact
