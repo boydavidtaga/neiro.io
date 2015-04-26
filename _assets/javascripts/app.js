@@ -1,4 +1,3 @@
 //=require 'jquery'
 //=require 'slideout'
-
-'use strict';
+//=require parallax
