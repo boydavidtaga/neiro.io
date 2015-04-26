@@ -23,7 +23,7 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-guard 'livereload', grace_period: 2 do
+guard 'livereload', grace_period: 3 do
   watch(/.*/)
   ignore(/.sass-cache/)
 end

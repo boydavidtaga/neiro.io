@@ -1,8 +1,13 @@
 article
-  margin: 0 1em 1em 1em
-  position: relative
+  @include container()
+  margin: 0 0em 1em 0em
 
-  p.date
-    position: absolute
-    top: 0
-    right: 0
+  .title-container
+    @include span(9)
+
+  .date-container
+    margin: 0.67em 0
+    @include span(3 last)
+
+  .content
+    @include span(12)
