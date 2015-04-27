@@ -1,13 +1,8 @@
 <ul>
   {% for link in site.navigation %}
-    {% assign current = nil %}
-
-    {% if page.url contains link.url %}
-      {% assign current = 'current' %}
-    {% endif %}
-
-    <li class="{% if forloop.first %}first {% endif %}{{ current }}{% if forloop.last %} last{% endif %}">
-      <a href="{{ link.url }}">{{ link.title }}</a>
+    {% assign url = page.url | remove:'/index.html' %}
+    <li {% if url == link.url %}class="current"{% endif %}>
+      <a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
     </li>
   {% endfor %}
 </ul>
