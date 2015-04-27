@@ -1,10 +1,10 @@
 # Site settings
 title: neiro λ Web development, functional programming
 email: "mailto:neiro.mail@gmail.com"
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   My personal website, blog and portfolio
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://neiro.io" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://neiro.io"
 source_url: "https://github.com/ne1ro/neiro.io"
 twitter: "https://twitter.com/ne1ro"
 github: "https://github.com/ne1ro"
