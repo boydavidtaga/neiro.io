@@ -11,18 +11,9 @@ title: About me
 <p>
   I have work experience in the next programming languages, frameworks and others:
   <ul>
-    <li>Ruby</li>
-    <li>Javascript</li>
-    <li>Coffeescript</li>
-    <li>Go</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>SASS</li>
-    <li>Ruby on Rails</li>
-    <li>Node.js / io.js</li>
-    <li>Express.js</li>
-    <li>Koa</li>
-    <li>Angular.js</li>
+    {% for skill in site.data.skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
   </ul>
 </p>
 
