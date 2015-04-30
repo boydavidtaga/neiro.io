@@ -4,3 +4,9 @@ title: My projects
 ---
 
 <h2 class="text-center">List of my projects:</h2>
+
+<ul class="projects">
+  {% for project in site.data.portfolio %}
+    <li>{{ project }}</li>
+  {% endfor %}
+</ul>

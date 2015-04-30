@@ -1,0 +1,34 @@
+# List of my projects
+---
+  -
+    name: SmartDrum
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - HTML
+      - CSS
+      - Twitter Bootstrap
+      - Coffeescript
+      - jQuery
+      - DevOps
+      - Linux
+      - Administration
+    date_start: Sep 2012
+    date_end: Dec 2012
+    source: https://github.com/ne1ro/smartdrum-website
+    description: Virtual company website with blog, admin panel, products page
+
+  -
+    name: Megaprint
+    skills:
+      - Ruby
+      - Ruby on  Rails
+      - HTML
+      - CSS
+      - Coffeescript
+      - jQuery
+      - DevOps
+    date_start: Feb 2013
+    date_end: May 2013
+    url: http://mp31.ru
+    description: Company website full-stack development, admin page, production list
