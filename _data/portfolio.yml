@@ -63,3 +63,36 @@
     description: Social management network, full-stack Ruby on Rails development,
       Angular.js integration, Node.js realtime updates with websockets
 
+  - name: EnlightenMe
+    skills:
+      - Ruby
+      - Ruby on Rails
+    date_start: Jul 2013
+    date_end: Feb 2014
+    source: https://github.com/ne1ro/virtualacademy
+    description: Virtual courses academy startup, Ruby on Rails API development
+
+  - name: KartaTruda (TrudVsem)
+    skills:
+      - Javascript
+      - Coffeescript
+      - HTML
+      - CSS
+      - Angular.js
+      - jQuery
+    date_start: Nov 2013
+    date_end: Jul 2014
+    url: http://rgu.trudvsem.ru/
+    description: Front-end development of SPA applications, admin panel, jobs website, geolocation
+
+  - name: VG Express
+    skills:
+      - Javascript
+      - HTML
+      - CSS
+      - Angular.js
+      - jQuery
+    date_start: Dec 2013
+    date_end: Jul 2014
+    source: https://www.vgexpress.ru/
+    description: SPA frontend to REST API, jQuery integration, animations, client-side business-logic
