@@ -3,10 +3,20 @@ layout: default
 title: My projects
 ---
 
-<h2 class="text-center">List of my projects:</h2>
+<h1 class="text-center">List of my projects:</h1>
 
-<ul class="projects">
+<ul class="portfolio-gallery">
   {% for project in site.data.portfolio %}
-    <li>{{ project }}</li>
+    <li id="{{ project.id }}" class="slide">
+      <p class="date-start">{{ project.date_start }}</p>
+      <p class="date-end">{{ project.date_end }}</p>
+      <h3 class="text-center">{{ project.name }}</h3>
+      <p class="text-center">{{ project.description }}</p>
+      <ul>
+        {% for skill in project.skills %}
+          <li class="skill-tag">{{ skill }} </li>
+        {% endfor %}
+      </ul>
+    </li>
   {% endfor %}
 </ul>
