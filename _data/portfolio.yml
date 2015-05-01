@@ -33,3 +33,33 @@
     url: http://mp31.ru
     description: Company website full-stack development, admin panel, production list,
       news blog
+
+  -
+    name: Drupal theme
+    skills:
+      - HTML
+      - CSS
+      - Javascript
+      - jQuery
+      - PHP
+    date_start: Apr 2013
+    date_end: Jun 2013
+    url: http://usc.bsu.edu.ru
+    description: Custom Drupal theme with dynamic layout for website
+
+  - name: Kron Network
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - HTML
+      - CSS
+      - Coffeescript
+      - Angular.js
+      - Node.js
+      - DevOps
+    date_start: Apr 2013
+    date_end: Jun 2013
+    source: https://github.com/ne1ro/kron-prototype
+    description: Social management network, full-stack Ruby on Rails development,
+      Angular.js integration, Node.js realtime updates with websockets
+
