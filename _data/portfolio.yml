@@ -2,6 +2,7 @@
 ---
   -
     name: SmartDrum
+    id: smartdrum
     skills:
       - Ruby
       - Ruby on Rails
@@ -20,6 +21,7 @@
 
   -
     name: Megaprint
+    id: megaprint
     skills:
       - Ruby
       - Ruby on  Rails
@@ -36,6 +38,7 @@
 
   -
     name: Drupal theme
+    id: drupal_theme
     skills:
       - HTML
       - CSS
@@ -48,6 +51,7 @@
     description: Custom Drupal theme with dynamic layout for website
 
   - name: Kron Network
+    id: kron
     skills:
       - Ruby
       - Ruby on Rails
@@ -64,6 +68,7 @@
       Angular.js integration, Node.js realtime updates with websockets
 
   - name: EnlightenMe
+    id: enlighten_me
     skills:
       - Ruby
       - Ruby on Rails
@@ -73,6 +78,7 @@
     description: Virtual courses academy startup, Ruby on Rails API development
 
   - name: KartaTruda (TrudVsem)
+    id: kartatruda
     skills:
       - Javascript
       - Coffeescript
@@ -86,6 +92,7 @@
     description: Front-end development of SPA applications, admin panel, jobs website, geolocation
 
   - name: VG Express
+    id: vg
     skills:
       - Javascript
       - HTML
