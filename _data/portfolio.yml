@@ -12,8 +12,6 @@
       - Coffeescript
       - jQuery
       - DevOps
-      - Linux
-      - Administration
     date_start: Sep 2012
     date_end: Dec 2012
     source: https://github.com/ne1ro/smartdrum-website
@@ -144,3 +142,43 @@
     date_start: Jun 2014
     date_end: Jul 2014
     description: Full-stack Ruby on Rails app, website prototype, admin page
+
+  - name: InstallBundle control panel
+    id: ib_control_panel
+    skills:
+      - Javascript
+      - Coffeescript
+      - Node.js (io.js)
+      - HTML
+      - CSS
+      - Angular.js
+      - Twitter Bootstrap
+      - DevOps
+    url: http://cab.installbundle.com/
+    date_start: Jul 2014
+    description: Admin control panel REST API development and frontend support, full-stack Node.js web development
+
+  - name: Good Deeds
+    id: good_deeds
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - DevOps
+    url: http://deeeds.com/
+    date_start: Oct 2014
+    date_end: Mar 2015
+    description: Ruby on Rails API for charity platform with social network abilities
+
+  - name: Neiro.io
+    id: neiroio
+    skills:
+      - Ruby
+      - Javascript
+      - Jekyll
+      - HTML
+      - CSS
+      - jQuery
+    date_start: Apr 2015
+    date_end: May 2015
+    url: http://neiro.io
+    description: My personal website powered by Jekyll
