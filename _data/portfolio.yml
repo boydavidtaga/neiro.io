@@ -143,8 +143,8 @@
     date_end: Jul 2014
     description: Full-stack Ruby on Rails app, website prototype, admin page
 
-  - name: InstallBundle control panel
-    id: ib_control_panel
+  - name: InstallBundle
+    id: installbundle
     skills:
       - Javascript
       - Coffeescript
@@ -155,7 +155,7 @@
       - Angular.js
       - Twitter Bootstrap
       - DevOps
-    url: http://cab.installbundle.com/
+    url: http://installbundle.com/
     date_start: Jul 2014
     description: Admin control panel REST API development and frontend support, full-stack Node.js web development
 
