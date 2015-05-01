@@ -85,7 +85,7 @@
       - HTML
       - CSS
       - Angular.js
-      - jQuery
+      - Twitter Bootstrap
     date_start: Nov 2013
     date_end: Jul 2014
     url: http://rgu.trudvsem.ru/
@@ -103,3 +103,44 @@
     date_end: Jul 2014
     source: https://www.vgexpress.ru/
     description: SPA frontend to REST API, jQuery integration, animations, client-side business-logic
+
+  - name: FlyCats
+    id: flycats
+    skills:
+      - Coffeescript
+      - HTML
+      - CSS
+      - Angular.js
+      - jQuery
+    date_start: Mar 2013
+    date_end: Feb 2015
+    url: http://flycats.ru/
+    description: SPA frontend to REST API, client-side business-logic, mobile app prototype
+
+  - name: Sunduk
+    id: sunduk
+    skills:
+      - Coffeescript
+      - HTML
+      - CSS
+      - Django
+      - Angular.js
+      - jQuery
+    date_start: Apr 2014
+    date_end: May 2014
+    url: http://smotrisunduk.ru/
+    description: Frontend development of real estates portal with banner pre-order
+
+  - name: Modatracker
+    id: modatracker
+    skills:
+      - Ruby
+      - Coffeescript
+      - HTML
+      - CSS
+      - Ruby on Rails
+      - jQuery
+      - Twitter Bootstrap
+    date_start: Jun 2014
+    date_end: Jul 2014
+    description: Full-stack Ruby on Rails app, website prototype, admin page
