@@ -124,6 +124,7 @@ GEM
     rails-assets-normalize-scss (3.0.3)
     rails-assets-slideout.js (0.1.7)
       rails-assets-decouple (= 0.0.1)
+    rails-assets-swiper (3.0.7)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -176,6 +177,7 @@ DEPENDENCIES
   rails-assets-jquery!
   rails-assets-normalize-scss!
   rails-assets-slideout.js!
+  rails-assets-swiper!
   sass
   susy
   terminal-notifier
