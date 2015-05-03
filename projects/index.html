@@ -17,7 +17,17 @@ title: My projects
         </div>
 
         <section>
-          <h3 class="text-center">{{ project.name }}</h3>
+          {% if project.url %}
+            <a href="{{ project.url }}" target="_blank">
+              <h3 class="text-center">{{ project.name }}</h3>
+            </a>
+          {% elsif project.source %}
+            <a href="{{ project.source }}" target="_blank">
+              <h3 class="text-center">{{ project.name }}</h3>
+            </a>
+          {% else %}
+            <h3 class="text-center">{{ project.name }}</h3>
+          {% endif %}
           <p class="text-center">{{ project.description }}</p>
         </section>
 
