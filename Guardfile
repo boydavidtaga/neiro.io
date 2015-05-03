@@ -29,7 +29,7 @@ guard 'jekyll_plus', serve: true do
   ignore(/.sass-cache/)
 end
 
-guard 'livereload', grace_period: 1 do
+guard 'livereload' do
   watch(/.*/)
   ignore(/.sass-cache/)
 end
