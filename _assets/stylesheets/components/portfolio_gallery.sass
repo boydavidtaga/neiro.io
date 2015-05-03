@@ -8,9 +8,16 @@ ul.portfolio-gallery
     @include span(6)
     background: rgba(0, 0, 0, 0.75)
     margin-bottom: gutter()
+    position: relative
+    z-index: 0
 
     &:nth-child(even)
       @include span(6 last)
+
+    img.bg
+      position: absolute
+      width: 100%
+      height: 100%
 
     a
       color: white
