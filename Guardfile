@@ -23,13 +23,13 @@
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
-guard 'livereload', grace_period: 3.5 do
-  watch(/.*/)
-  ignore(/.sass-cache/)
-end
-
 guard 'jekyll_plus', serve: true do
   watch(/.*/)
   ignore(/^_site/)
+  ignore(/.sass-cache/)
+end
+
+guard 'livereload', grace_period: 1 do
+  watch(/.*/)
   ignore(/.sass-cache/)
 end
