@@ -7,8 +7,7 @@ title: My projects
 
 <ul class="portfolio-gallery">
   {% for project in site.data.portfolio %}
-    <li id="{{ project.id }}" class="slide">
-      <img class="bg" src="{{ project.id | prepend: 'projects/' | append: '/index.png' | asset_path }}" alt="{{ project.name }} screenshot">
+    <li id="{{ project.id }}" class="slide" style="background-image: url({{ project.id | prepend: 'projects/' | append: '/index.png' | asset_path }})">
       <div class="container">
         <div class="date-start">
           <span class="text-left">{{ project.date_start }}</span>
