@@ -24,6 +24,11 @@ ul.portfolio-gallery
       content: ''
       z-index: -1
 
+    &:hover
+      &:before
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5))
+        @include transition(all 0.25s ease-in-out)
+
     a
       color: white
       text-decoration: none
