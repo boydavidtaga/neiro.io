@@ -13,6 +13,12 @@
       </main>
     </div>
 
+    <ul class="tags">
+      {% for tag in page.tags %}
+        <li class="tag">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+
     {% include footer.html %}
     {% javascript app %}
   </body>

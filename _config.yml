@@ -8,7 +8,7 @@ url: "http://neiro.io"
 source_url: "https://github.com/ne1ro/neiro.io"
 twitter: "https://twitter.com/ne1ro"
 github: "https://github.com/ne1ro"
-linkedin: "https://ru.linkedin.com/in/neiro"
+linkedin: "https://linkedin.com/in/neiro"
 
 # Build settings
 markdown: kramdown
@@ -20,6 +20,10 @@ exclude:
   - Guardile
   - Gemfile.lock
   - vendor
+
+# Tag configuration
+tag_page_layout: tag_page
+tag_page_dir: tag
 
 # Jekyll assets configuration
 assets:

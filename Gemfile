@@ -5,6 +5,7 @@ gem 'bundler'
 group :development do
   gem 'jekyll'
   gem 'jekyll-assets', require: true
+  gem 'jekyll-tagging'
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'guard-jekyll-plus', require: false

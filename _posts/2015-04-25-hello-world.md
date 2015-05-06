@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello world!
+tags: [programming]
 ---
 
 Welcome! This is my blog about web development, functional programming and others geeky themes.  
@@ -12,7 +13,3 @@ I love programming as hard job that combines cold logic and creativity.
 I love programming as endless act of self-perfection.  
 
 This is why i would share with you my hacks, reviews, thoughts about programming, code snippets and more interesting stuff.  
-
-
-
-

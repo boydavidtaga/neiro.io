@@ -90,6 +90,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
+    jekyll-tagging (0.6.0)
+      ruby-nuggets
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     json (1.8.2)
@@ -108,6 +110,7 @@ GEM
     notiffany (0.0.6)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    nuggets (1.0.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
@@ -130,6 +133,8 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
+    ruby-nuggets (1.0.0)
+      nuggets (= 1.0.0)
     safe_yaml (1.0.4)
     sass (3.4.13)
     shellany (0.0.1)
@@ -175,6 +180,7 @@ DEPENDENCIES
   guard-livereload (~> 2.4)
   jekyll
   jekyll-assets
+  jekyll-tagging
   rails-assets-jquery!
   rails-assets-normalize-scss!
   rails-assets-slideout.js!

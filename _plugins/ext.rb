@@ -1,5 +1,6 @@
 require 'jekyll-assets'
 require 'jekyll-assets/compass'
+require 'jekyll/tagging'
 require 'susy'
 require 'bundler/setup'
 
