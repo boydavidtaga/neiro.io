@@ -9,15 +9,16 @@
 
       <main>
         {{ content }}
+        <div class="container">
+          <ul class="tags">
+            {% for tag in page.tags %}
+              <li class="tag">{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         <div id="root_footer"></div>
       </main>
     </div>
-
-    <ul class="tags">
-      {% for tag in page.tags %}
-        <li class="tag">{{ tag }}</li>
-      {% endfor %}
-    </ul>
 
     {% include footer.html %}
     {% javascript app %}
