@@ -133,6 +133,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
+    rouge (1.8.0)
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
     safe_yaml (1.0.4)
@@ -181,9 +182,11 @@ DEPENDENCIES
   jekyll
   jekyll-assets
   jekyll-tagging
+  kramdown
   rails-assets-jquery!
   rails-assets-normalize-scss!
   rails-assets-slideout.js!
+  rouge
   sass
   susy
   terminal-notifier

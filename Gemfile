@@ -4,6 +4,8 @@ gem 'bundler'
 
 group :development do
   gem 'jekyll'
+  gem 'kramdown'
+  gem 'rouge'
   gem 'jekyll-assets', require: true
   gem 'jekyll-tagging'
   gem 'guard'
