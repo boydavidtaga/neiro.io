@@ -1,122 +1,118 @@
-/* Solarized Dark
- *
- *For use with Jekyll and Pygments
- *
- *http://ethanschoonover.com/solarized
- *
- *SOLARIZED HEX      ROLE
- *--------- -------- ------------------------------------------
- *base03    #002b36  background
- *base01    #586e75  comments / secondary content
- *base1     #93a1a1  body text / default code / primary content
- *orange    #cb4b16  constants
- *red       #dc322f  regex, special keywords
- *blue      #268bd2  reserved keywords
- *cyan      #2aa198  strings, numbers
- *green     #859900  operators, other keywords
-
 .highlight
-  background-color: #002b36
-  color: #93a1a1
+  // Solarized theme colors
+  $base01: #586e75
+  $base1: #93a1a1
+  $base03: #002b36
+  $orange: #cb4b16
+  $red: #dc322f
+  $blue: #268bd2
+  $cyan: #2aa198
+  $green: #859900
+
+  background-color: $base03
+  font-size: 0.8em
+  padding: 0.5em
+  color: $base1
+
   .lineno, .c
-    color: #586e75
+    color: $base01
   .err, .g
-    color: #93a1a1
+    color: $base1
   .k
-    color: #859900
+    color: $green
   .l, .n
-    color: #93a1a1
+    color: $base1
   .o
-    color: #859900
+    color: $green
   .x
-    color: #cb4b16
+    color: $orange
   .p
-    color: #93a1a1
+    color: $base1
   .cm
-    color: #586e75
+    color: $base01
   .cp
-    color: #859900
+    color: $green
   .c1
-    color: #586e75
+    color: $base01
   .cs
-    color: #859900
+    color: $green
   .gd
-    color: #2aa198
+    color: $cyan
   .ge
-    color: #93a1a1
+    color: $base1
     font-style: italic
   .gr
-    color: #dc322f
+    color: $red
   .gh
-    color: #cb4b16
+    color: $orange
   .gi
-    color: #859900
+    color: $green
   .go, .gp
-    color: #93a1a1
+    color: $base1
   .gs
-    color: #93a1a1
+    color: $base1
     font-weight: bold
   .gu
-    color: #cb4b16
+    color: $orange
   .gt
-    color: #93a1a1
+    color: $base1
   .kc
-    color: #cb4b16
+    color: $orange
   .kd
-    color: #268bd2
+    color: $blue
   .kn, .kp
-    color: #859900
+    color: $green
   .kr
-    color: #268bd2
+    color: $blue
   .kt
-    color: #dc322f
+    color: $red
   .ld
-    color: #93a1a1
+    color: $base1
   .m, .s
-    color: #2aa198
+    color: $cyan
   .na
-    color: #93a1a1
+    color: $base1
   .nb
     color: #B58900
   .nc
-    color: #268bd2
+    color: $blue
   .no
-    color: #cb4b16
+    color: $orange
   .nd
-    color: #268bd2
+    color: $blue
   .ni, .ne
-    color: #cb4b16
+    color: $orange
   .nf
-    color: #268bd2
+    color: $blue
   .nl, .nn, .nx, .py
-    color: #93a1a1
+    color: $base1
   .nt, .nv
-    color: #268bd2
+    color: $blue
   .ow
-    color: #859900
+    color: $green
   .w
-    color: #93a1a1
+    color: $base1
   .mf, .mh, .mi, .mo
-    color: #2aa198
+    color: $cyan
   .sb
-    color: #586e75
+    color: $base01
   .sc
-    color: #2aa198
+    color: $cyan
   .sd
-    color: #93a1a1
+    color: $base1
   .s2
-    color: #2aa198
+    color: $cyan
   .se
-    color: #cb4b16
+    color: $orange
   .sh
-    color: #93a1a1
+    color: $base1
   .si, .sx
-    color: #2aa198
+    color: $cyan
   .sr
-    color: #dc322f
+    color: $red
   .s1, .ss
-    color: #2aa198
+    color: $cyan
   .bp, .vc, .vg, .vi
-    color: #268bd2
+    color: $blue
   .il
-    color: #2aa198
+    color: $cyan

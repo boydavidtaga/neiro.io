@@ -34,16 +34,16 @@ end
 It works greatly with Ruby on Rails, but you need some hack to use it with jekyll-assets - by default, jekyll-assets configuration does not include rails-assets paths.  To fix this, you can load paths with **Sprockets** in your Jekyll plugin file (*_plugins/ext.rb*) .  
 
 ``` ruby
-  require 'jekyll-assets'
-  require 'bundler/setup'
+require 'jekyll-assets'
+require 'bundler/setup'
 
-  Bundler.require(:default, 'development')
+Bundler.require(:default, 'development')
 
-  if defined?(RailsAssets)
-    RailsAssets.load_paths.each do |path|
-      Sprockets.append_path path
-    end
+if defined?(RailsAssets)
+  RailsAssets.load_paths.each do |path|
+    Sprockets.append_path path
   end
+end
 ```
 
 When you've completed setup, you can manage your assets almost like in Ruby on Rails.
