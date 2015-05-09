@@ -7,7 +7,7 @@
 [Jekyll](http://jekyllrb.com/) is the great static website generator, that can be easily used for blogs, portfolio pages, galleries and others simple projects. It`s very simple, flexible tool that can be upgraded with hundreds powerful plugins.  
 
 If you like Ruby on Rails, you might want to use Rails assets pipeline when you work with front-end in Jekyll.
-If so, here are [jekyll-assets](https://github.com/jekyll-assets/jekyll-assets). This project allows you use some Rails-like assets pipeline functionality:
+If so, here are [jekyll-assets](https://github.com/jekyll-assets/jekyll-assets). This project allows you to use some Rails-like assets pipeline functionality:
 
 * SASS, LESS, Coffeescript and even ERB
 * Rails assets dependencies management:  
