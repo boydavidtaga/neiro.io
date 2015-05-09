@@ -11,26 +11,29 @@ If so, here are [jekyll-assets](https://github.com/jekyll-assets/jekyll-assets).
 
 * SASS, LESS, Coffeescript and even ERB
 * Rails assets dependencies management:  
-  {% highlight javascript linenos %}
-    //=require 'jquery'
-    //=require 'slideout'
-    //=require parallax
-  {% endhighlight %}
+
+  ``` javascript
+  //=require 'jquery'
+  //=require 'slideout'
+  //=require parallax
+  ```
 * Minification and compression for Javascript and CSS
 *  Gzipped versions of assets
  
 But what if you also wants to use popular Bower packages with Jekyll and jekyll-assets?  
 First, you need [Rails assets](https://rails-assets.org/) project, that allows you to use any Bower modules with Bundler. You just need to add required packages in your *Gemfile* like this:  
-{% highlight ruby linenos %}
-  source 'https://rails-assets.org' do
-    gem 'rails-assets-jquery'
-    gem 'rails-assets-normalize-scss'
-    gem 'rails-assets-slideout.js'
-  end
-{% endhighlight %}
+
+``` ruby
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-normalize-scss'
+  gem 'rails-assets-slideout.js'
+end
+```
 
 It works greatly with Ruby on Rails, but you need some hack to use it with jekyll-assets - by default, jekyll-assets configuration does not include rails-assets paths.  To fix this, you can load paths with **Sprockets** in your Jekyll plugin file (*_plugins/ext.rb*) .  
-{% highlight ruby linenos %}
+
+``` ruby
   require 'jekyll-assets'
   require 'bundler/setup'
 
@@ -41,6 +44,6 @@ It works greatly with Ruby on Rails, but you need some hack to use it with jekyl
       Sprockets.append_path path
     end
   end
-{% endhighlight %}
+```
 
 When you've completed setup, you can manage your assets almost like in Ruby on Rails.
