@@ -10,8 +10,12 @@ twitter: "https://twitter.com/ne1ro"
 github: "https://github.com/ne1ro"
 linkedin: "https://linkedin.com/in/neiro"
 
-# Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude:
   - bower.json
