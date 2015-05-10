@@ -1,7 +1,7 @@
 ---
   layout: post
   title: Jekyll with Rails assets
-  tags: [ruby, jekyll, ruby-on-rails, assets]
+  tags: [ruby,jekyll,ruby-on-rails,assets]
 ---
 
 [Jekyll](http://jekyllrb.com/) is the great static website generator, that can be easily used for blogs, portfolio pages, galleries and others simple projects. It`s very simple, flexible tool that can be upgraded with hundreds powerful plugins.  

@@ -9,12 +9,8 @@
 
       <main>
         {{ content }}
-        <div class="container">
-          <ul class="tags">
-            {% for tag in page.tags %}
-              <li class="tag">{{ tag }}</li>
-            {% endfor %}
-          </ul>
+        <div id="tag-cloud" class="container">
+          {{ post | tags | replace:', ','' }}
         </div>
         <div id="root_footer"></div>
       </main>

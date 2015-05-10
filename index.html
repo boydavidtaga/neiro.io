@@ -17,11 +17,9 @@ title: Web development, functional programming
 
     <content>
       {{ post.excerpt }}
-        <ul class="tags">
-          {% for tag in post.tags %}
-            <li class="tag">{{ tag }}</li>
-          {% endfor %}
-        </ul>
     </content>
+    <div id="tag-cloud" class="container">
+      {{ post | tags | replace:', ','' }}
+    </div>
   </article>
 {% endfor %}
