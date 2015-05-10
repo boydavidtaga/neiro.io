@@ -9,9 +9,16 @@
 
       <main>
         {{ content }}
-        <div id="tag-cloud" class="container">
-          {{ page | tags | replace:', ','' }}
+        <div class="row">
+          <div id="tag-cloud" class="half">
+            {{ page | tags | replace:', ','' }}
+          </div>
+
+          <div class="half text-right last">
+            <p class="text-right">{{ page.date | | date: '%d %B, %Y' }}</p>
+          </div>
         </div>
+
         <div id="root_footer"></div>
       </main>
     </div>
