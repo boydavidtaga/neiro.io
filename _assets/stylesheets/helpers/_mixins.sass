@@ -8,3 +8,11 @@
 @mixin color-transition($color)
   color: $color
   @include transition(color 0.25s ease-in-out)
+
+
+// Center horizontally and vertically
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  @include transform(translate(-50%, -50%))
