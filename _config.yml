@@ -9,13 +9,9 @@ source_url: "https://github.com/ne1ro/neiro.io"
 twitter: "https://twitter.com/ne1ro"
 github: "https://github.com/ne1ro"
 linkedin: "https://linkedin.com/in/neiro"
-
+timezone: Europe/Moscow
 markdown: kramdown
 highlighter: rouge
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 exclude:
   - bower.json
@@ -24,16 +20,6 @@ exclude:
   - Guardile
   - Gemfile.lock
   - vendor
-
-# Tag configuration
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_permalink_style: pretty
-
-# Jekyll assets configuration
-assets:
-  js_compressor: uglifier
-  css_compressor: sass
 
 navigation:
   - title: Blog
@@ -44,3 +30,15 @@ navigation:
     url: /about
   - title: Contact
     url: /contact
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
