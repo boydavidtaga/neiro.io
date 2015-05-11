@@ -10,11 +10,11 @@
       <main>
         {{ content }}
         <div class="row">
-          <div id="tag-cloud" class="half">
+          <div id="tag-cloud" class="two-third">
             {{ page | tags | replace:', ','' }}
           </div>
 
-          <div class="half text-right last">
+          <div class="quarter text-right last">
             <p class="text-right">{{ page.date | | date: '%d %B, %Y' }}</p>
           </div>
         </div>
