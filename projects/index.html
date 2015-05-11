@@ -3,8 +3,6 @@ layout: default
 title: My projects
 ---
 
-<h1 class="text-center">List of my projects:</h1>
-
 <ul class="portfolio-gallery">
   {% for project in site.data.portfolio %}
     <li id="{{ project.id }}" class="slide" style="background-image: url({{ project.id | prepend: 'projects/' | append: '/index.jpg' | asset_path }})">
