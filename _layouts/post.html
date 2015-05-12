@@ -9,14 +9,8 @@
 
       <main>
         {{ content }}
-        <div class="row">
-          <div id="tag-cloud" class="two-third">
-            {{ page | tags | replace:', ','' }}
-          </div>
-
-          <div class="quarter text-right last">
-            <p class="text-right">{{ page.date | | date: '%d %B, %Y' }}</p>
-          </div>
+        <div id="tag-cloud" class="row">
+          {{ page | tags | replace:', ','' }}
         </div>
 
         {% include social_buttons.html %}
