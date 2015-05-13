@@ -1,7 +1,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="title" content="{{ page.title }}">
+  <meta name="author" content="Alexey Kuznetsov">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', '}}">
+  {% endif %}
+  <meta name="robots" content="index,follow">
+
   <title>neiro λ {{ page.title }}</title>
+
   {% stylesheet app %}
   <link rel="icon" href="{% asset_path 'neiro.jpg' %}" type="image/x-icon">
   <link rel="apple-touch-icon" href="{% asset_path 'neiro.jpg' %}" type="image/png">
