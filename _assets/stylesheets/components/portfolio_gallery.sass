@@ -5,14 +5,11 @@ ul.portfolio-gallery
   padding: 0
 
   li.slide
-    @include span(6)
+    @include span(12 last)
     @include background-size(cover)
     margin-bottom: gutter()
     position: relative
     z-index: 0
-
-    &:nth-child(even)
-      @include span(6 last)
 
     &:before
       position: absolute
@@ -46,3 +43,11 @@ ul.portfolio-gallery
     .date-end
       @include span(6 last)
       text-align: right
+
+@include susy-breakpoint($bp-medium, $susy)
+  ul.portfolio-gallery
+    li.slide
+      @include span(6)
+
+      &:nth-child(even)
+        @include span(6 last)
