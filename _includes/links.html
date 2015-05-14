@@ -1,6 +1,10 @@
 <ul>
   {% for link in site.navigation %}
-    {% assign url = page.url | remove:'/index.html' %}
+    {% if page.url == '/index.html' %}
+      {% assign url = '/' %}
+    {% else %}
+      {% assign url = page.url | remove:'/index.html' %}
+    {% endif %}
     <li {% if url == link.url %}class="current"{% endif %}>
       <a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
     </li>
