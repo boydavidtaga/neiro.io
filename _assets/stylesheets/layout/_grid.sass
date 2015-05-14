@@ -17,10 +17,13 @@
 
 
 .half
-  @include span(6)
+  @include span(12 last)
 
-  &.last
-    @include span(6 last)
+  @include susy-breakpoint($bp-medium, $susy)
+    @include span(6)
+
+    &.last
+      @include span(6 last)
 
 
 .two-third
