@@ -20,6 +20,7 @@ exclude:
   - Guardile
   - Gemfile.lock
   - vendor
+  - readme.md
 
 navigation:
   - title: Blog

@@ -8,6 +8,7 @@ group :development do
   gem 'rouge'
   gem 'jekyll-assets', require: true
   gem 'jekyll-tagging'
+  gem 'jekyll-sitemap'
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'guard-jekyll-plus', require: false
