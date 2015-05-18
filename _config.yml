@@ -43,4 +43,4 @@ tag_permalink_style: pretty
 assets:
   js_compressor: uglifier
   css_compressor: sass
-  gzip: [ text/css, application/javascript, image/jpg, image/png ]
+  gzip: [ text/css, application/javascript, image/jpeg, image/png ]
