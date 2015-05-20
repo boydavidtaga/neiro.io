@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'my_app_name'
+set :application, 'neiro.io'
 set :repo_url, 'git@github.com:ne1ro/neiro.io.git'
 
 # Default branch is :master
