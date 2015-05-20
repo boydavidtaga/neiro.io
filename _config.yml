@@ -21,6 +21,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - readme.md
+  - Capfile
+  - config
 
 navigation:
   - title: Blog
