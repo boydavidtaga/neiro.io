@@ -21,6 +21,8 @@ group :development do
   gem 'breakpoint', '~> 2.5.0'
   gem 'font-awesome-sass', '~> 4.3.0'
   gem 'uglifier'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
 end
 
 source 'https://rails-assets.org' do
