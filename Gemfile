@@ -24,7 +24,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
-  gem 'capistrano-jekyll', path: '~/Projects/capistrano-jekyll'
+  gem 'capistrano-jekyll'
 end
 
 source 'https://rails-assets.org' do
