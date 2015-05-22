@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
+gem 'jekyll'
 
 group :development do
-  gem 'jekyll'
   gem 'kramdown'
   gem 'rouge'
   gem 'jekyll-assets', require: true
@@ -24,6 +24,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
+  gem 'capistrano-jekyll', path: '~/Projects/capistrano-jekyll'
 end
 
 source 'https://rails-assets.org' do

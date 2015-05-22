@@ -1,3 +1,9 @@
+PATH
+  remote: ~/Projects/capistrano-jekyll
+  specs:
+    capistrano-jekyll (0.0.1)
+      capistrano (~> 3.0, >= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -199,6 +205,7 @@ DEPENDENCIES
   bundler
   capistrano
   capistrano-bundler
+  capistrano-jekyll!
   capistrano-rvm
   compass
   font-awesome-sass (~> 4.3.0)

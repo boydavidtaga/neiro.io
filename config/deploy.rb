@@ -34,5 +34,8 @@ set :repo_url, 'git@github.com:ne1ro/neiro.io.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+# Set Ruby version
+set :rvm_ruby_version, '2.2.2'
+
 # Set up bundler binaries
 set :bundle_bins, fetch(:bundle_bins, []).push('jekyll')
