@@ -6,3 +6,4 @@ require 'capistrano/deploy'
 
 # Include tasks from other gems included in your Gemfile
 require 'capistrano/bundler'
+require 'capistrano/rvm'

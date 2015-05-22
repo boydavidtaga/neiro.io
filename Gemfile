@@ -23,6 +23,7 @@ group :development do
   gem 'uglifier'
   gem 'capistrano'
   gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 source 'https://rails-assets.org' do
