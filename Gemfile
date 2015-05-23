@@ -13,6 +13,7 @@ gem 'susy'
 gem 'breakpoint', '~> 2.5.0'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'uglifier'
+gem 'json'
 
 group :development do
   gem 'guard'

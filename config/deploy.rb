@@ -38,4 +38,5 @@ set :repo_url, 'git@github.com:ne1ro/neiro.io.git'
 set :bundle_bins, fetch(:bundle_bins, []).push('jekyll')
 
 # Ruby version
-set :rbenv_ruby, '2.2.2'
+set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_map_bins, %w(gem bundle jekyll)

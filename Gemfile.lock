@@ -212,6 +212,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-sitemap
   jekyll-tagging
+  json
   kramdown
   rails-assets-jquery!
   rails-assets-normalize-scss!
