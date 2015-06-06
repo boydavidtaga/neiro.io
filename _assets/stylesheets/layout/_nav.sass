@@ -1,5 +1,4 @@
 nav
-  padding: .5em
   @include container(45em)
 
   ul
@@ -8,14 +7,20 @@ nav
     padding-left: 0
 
     li
-      text-align: center
       @include span(3)
+      text-align: center
 
       &:last-child
         @include span(3 last)
 
       a
-        color: $dark
+        color: white
+
+        &:visited
+          color: white
+
+        &:hover
+          color: $green + #333
 
       &.current a
         text-decoration: none

@@ -4,4 +4,7 @@ header
   position: relative
   background-position: 25%
   padding: gutter()
-  min-height: 12.5em
+  min-height: 16em
+
+  @include susy-breakpoint($bp-medium, $susy)
+    min-height: 12em
