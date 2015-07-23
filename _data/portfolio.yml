@@ -157,6 +157,7 @@
       - DevOps
     url: http://installbundle.com/
     date_start: Jul 2014
+    date_end: Jul 2015
     description: Admin control panel REST API development and frontend support, full-stack Node.js web development
 
   - name: Good Deeds
@@ -183,3 +184,16 @@
     date_end: May 2015
     url: http://neiro.io
     description: My personal website powered by Jekyll
+
+  - name: Engines Honda
+    id: engines_honda
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - Javascript
+      - Coffeescript
+      - jQuery
+      - DevOps
+    date_start: Jun 2015
+    description: Full-stack Ruby on Rails development of commercial web application
+
