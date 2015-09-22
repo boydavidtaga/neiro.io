@@ -2,7 +2,6 @@
   - Ruby
   - Javascript
   - Coffeescript
-  - Go
   - PostgreSQL
   - MongoDB
   - Redis
@@ -15,3 +14,5 @@
   - Koa
   - jQuery
   - Angular.js
+  - Backbone.js
+  - React
