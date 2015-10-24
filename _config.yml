@@ -1,5 +1,7 @@
 # Site settings
 title: neiro λ Web development, functional programming
+name: neiro λ Web development, functional programming
+author: "Alexey Kuznetsov"
 email: "mailto:neiro.mail@gmail.com"
 description: >
   My personal website, blog and portfolio

@@ -1,6 +1,7 @@
 require 'jekyll-assets'
 require 'jekyll/tagging'
 require 'jekyll-sitemap'
+require 'jekyll-feed'
 require 'susy'
 require 'bundler/setup'
 
