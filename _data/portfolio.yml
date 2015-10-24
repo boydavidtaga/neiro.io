@@ -197,3 +197,15 @@
     date_start: Jun 2015
     description: Full-stack Ruby on Rails development of commercial web application
 
+  - name: Kinderly
+    id: kinderly
+    url: http://kinderly.ru
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - PostgreSQL
+      - Javascript
+      - Coffeescript
+      - jQuery
+    date_start: Jun 2015
+    description: ROR-based CMS development for online store
