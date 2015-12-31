@@ -2,12 +2,18 @@ article
   @include container()
   margin: 0 0em 3em 0em
 
+
   .title-container
-    @include span(9)
+    @include span(8)
+
 
   .date-container
     margin: .67em 0
-    @include span(3 last)
+    @include span(4 last)
+
+    p
+      text-align: right
+
 
   content
     @include span(12)
