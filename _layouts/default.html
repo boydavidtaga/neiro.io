@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body>
+  <body style='visibility: hidden'>
     <div class="wrapper" id="root">
       {% include header.html %}
 
@@ -13,6 +13,7 @@
     </div>
 
     {% include footer.html %}
+    {% stylesheet app %}
     {% javascript app %}
   </body>
 </html>
