@@ -185,8 +185,8 @@
     url: http://neiro.io
     description: My personal website powered by Jekyll
 
-  - name: Engines Honda
-    id: engines_honda
+  - name: Power Product
+    id: power_product
     skills:
       - Ruby
       - Ruby on Rails
@@ -208,4 +208,5 @@
       - Coffeescript
       - jQuery
     date_start: Jun 2015
+    date_end: Jan 2016
     description: ROR-based CMS development for online store
