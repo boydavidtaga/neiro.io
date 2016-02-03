@@ -1,15 +1,13 @@
 ---
+  - Ruby
+  - Ruby on Rails
   - JavaScript
   - CoffeeScript
   - Node.js
-  - Express.js
-  - Koa
-  - Ruby
-  - Ruby on Rails
-  - MongoDB
-  - Redis
   - SQL
   - PostgreSQL
+  - MongoDB
+  - Redis
   - HTML
   - CSS
   - SASS
