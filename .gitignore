@@ -4,6 +4,7 @@
 
 _site/
 .sass-cache/
+.asset-cache
 public
 assets/javascripts/vendor
 _drafts
