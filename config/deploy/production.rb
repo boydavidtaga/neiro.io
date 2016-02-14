@@ -16,6 +16,8 @@
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-role :app, %w{deploy@neiro}
-role :web, %w{deploy@neiro}
+role :app, %w(deploy@neiro)
+role :web, %w(deploy@neiro)
 # role :db,  %w{deploy@example.com}
+
+set :default_env, 'JEKYLL_ENV' => 'production'

@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
-gem 'jekyll', '~> 2.5.3'
-gem 'jekyll-assets', '~> 1.0.0', require: true
+gem 'jekyll'
+gem 'jekyll-assets', require: true
 gem 'jekyll-tagging'
 gem 'jekyll-sitemap'
 gem 'kramdown'
 gem 'rouge'
 gem 'sass'
+gem 'sass-globbing', require: true
 gem 'compass'
 gem 'susy'
 gem 'breakpoint', '~> 2.5.0'
