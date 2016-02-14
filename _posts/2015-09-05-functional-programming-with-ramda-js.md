@@ -28,15 +28,15 @@ Ramda.js has some distinguishing features:
 
 To show examples of Ramda.js using, i will use io.js 3.2 and Babel, so let's create new *.js* file:
 
-``` javascript
+{% highlight javascript %}
 #!/usr/bin/env babel-node
 
 import R from 'ramda';
-```
+{% endhighlight %}
 
 Ramda.js API has some general use functions:
 
-``` javascript
+{% highlight javascript %}
 // Typing
 let str = 'test';
 R.is(String, str); //=> true
@@ -57,11 +57,11 @@ R.and(true, false); //=> false
 R.and([])(0); //=> 0
 R.not(1); //=> false
 R.both(isString, R.is(String))(str); // => true
-```
+{% endhighlight %}
 
 Like the *Underscore* and *Lodash*, Ramda has collection helper functions:
 
-``` javascript
+{% highlight javascript %}
 // Lists
 let animals = [
   {
@@ -87,11 +87,11 @@ R.last(animals).name; //=> cat
 R.uniq(R.pluck('type', animals)); //=> [ 'bird', 'mammal' ]
 R.length(R.filter(animal => animal.type === 'bird', animals)); //=> 2
 
-```
+{% endhighlight %}
 
 And object helpers too:
 
-```  javascript
+{% highlight javascript %}
 // Objects
 let cat = {
   type: 'animal',
@@ -111,11 +111,11 @@ let transformations = {
   binomialName: R.toLower
 }
 R.evolve(transformations, cat).type; // => ANIMAL
-```
+{% endhighlight %}
 
 But key point of Ramda.js is functions. Ramda allows you to easily compose multiple functions in different orders:
 
-``` javascript
+{% highlight javascript %}
 // Compose and pipe
 R.join(' and ', R.uniq(R.map(R.toUpper)(R.pluck('type', animals)))); //=> BIRD and MAMMAL
 // Performs right-to-left function composition
@@ -133,22 +133,22 @@ R.pipe(
   R.join(' and ')
 )(animals); //=> BIRD and MAMMAL
 
-```
+{% endhighlight %}
 
 Another power of Ramda is currying. Currying is the process of translating evaluation of function that takes multiple parameters in evaluating a sequence of functions, each with one argument.
 
-```  javascript
+{% highlight javascript %}
 let tripleMultiply = (a, b, c) => a * b * c;
 tripleMultiply(3, 9, 2); //=> 54
 tripleMultiply(3, 9)(2); //=> TypeError: tripleMultiply(..) is not a function
 let curriedMultiply = R.curry(tripleMultiply);
 curriedMultiply(3, 9)(2); //=> 54
 curriedMultiply(3)(9)(2); //=> 54
-```
+{% endhighlight %}
 
 Pattern matching is also available through *R.cond*. That allows you to check sequence of conditions to match different patterns:
 
-``` javascript
+{% highlight javascript %}
 let checkNumber = R.cond([
   [R.is(Number), R.identity],
   [R.is(String), parseInt],
@@ -163,7 +163,7 @@ checkNumber(true); //=> 1
 checkNumber(false); //=> 0
 checkNumber([]); //=> 0
 checkNumber(['test']); //=> NaN
-```
+{% endhighlight %}
 
 Ramda.js is one of the best functional programming libraries that exists in JavaScript ecosystem. It can completely replace *Underscore*, *Lodash* in your project with own object, lists and others helpers. Immutability, currying and composing allows you to write both efficient and simple code in pure functional style.
 

@@ -5,7 +5,7 @@
 ---
 Ruby is dynamically and strong typed programming language. In the most of the cases it gives you required level of type safety with minimal code. But  if you want build more secure applications or you're like static typing, then you need to check every variable or method for it's type or class:
 
-```ruby
+{% highlight ruby %}
 def foo(bar)
   fail 'I supposed it`s not a bar!' unless bar.is_a?(String)
   p 'Hi, bar!'
@@ -13,7 +13,7 @@ end
 
 foo 'bar' # Hi, bar!
 foo 100_500 # RuntimeError: I supposed it`s not a bar!
-```
+{% endhighlight %}
 
 But what if you're needing more complex type checking on multiple types or conditions? Then you need to provide more boilerplate, defensive code. If you're want to make your type safety code much cleaner, there is the [contracts](https://github.com/egonSchiele/contracts.ruby) library.
 
@@ -23,7 +23,7 @@ What is a contract? It's a pattern, that comes from functional programming world
 
 For example, there is a simple contract:
 
-```ruby
+{% highlight ruby %}
 require 'contracts'
 
 # Square area
@@ -40,11 +40,11 @@ end
 Square.area 10 # 100
 Square.area 'a' # ParamContractError: Contract violation for argument 1 of 1
 Square.area [] # ParamContractError: Contract violation for argument 1 of 1
-```
+{% endhighlight %}
 
 You can also use it on multiple arguments or returns:
 
-```ruby
+{% highlight ruby %}
 class Rectangle
   include Contracts::Core
   include Contracts::Builtin
@@ -58,18 +58,18 @@ end
 Rectangle.area 10, 10 # 100
 Rectangle.area [], false # ParamContractError: Contract violation for argument 1 of 2
 Rectangle.area 10, 'a' # ParamContractError: Contract violation for argument 2 of 2
-```
+{% endhighlight %}
 
 If you don't want to throw exception, you can easily override error callback:
 
-```ruby
+{% highlight ruby %}
 Contract.override_failure_callback do |data|
   puts 'IT`S AN OM~ ERROR!1'
   p data
 end
 
 Rectangle.area 10, 'a' # 'IT`S AN OM~ ERROR!1'
-```
+{% endhighlight %}
 
 ## Custom types
 *Contracts* library comes with many built-in type contracts:
@@ -80,7 +80,7 @@ Rectangle.area 10, 'a' # 'IT`S AN OM~ ERROR!1'
 
 and others. But if your want to create your own types or check more complex conditions, then you have to use lambdas:
 
-```ruby
+{% highlight ruby %}
 class CharCounter
   include Contracts::Core
   include Contracts::Builtin
@@ -97,13 +97,13 @@ CharCounter.count_chars 'hello', 'N' # 0
 CharCounter.count_chars 'hello', 'l' # 2
 CharCounter.count_chars 'hello', '*' # ParamContractError: Contract violation for argument 2 of 2
 CharCounter.count_chars 'llo', 'llo' # ParamContractError: Contract violation for argument 2 of 2
-```
+{% endhighlight %}
 
 
 ## Pattern matching
 Pattern matching, like a contract, comes from functional programming. You can use your contracts to test if your method matches pattern or not. For example, let's find a factorial of number with contracts:
 
-```ruby
+{% highlight ruby %}
 class Factorial
   include Contracts::Core
   include Contracts::Builtin
@@ -122,7 +122,7 @@ end
 Factorial.factorial 0 # 0
 Factorial.factorial 10 # 3628800
 Factorial.factorial 'a' # ContractError: Contract violation for argument 1 of 1
-```
+{% endhighlight %}
 
 ## Conclusion
 Ruby has simple and powerful type system, but if it's not enough or you want to use safety type checking and you don't like to write tons of a defensive code, then you may like *Contracts* library. Contracts allows you to check  many types, conditions for your class methods much cleaner and simpler. Also you can define your own types or conditions with plain Ruby lambdas, and then use them for pattern-matching.

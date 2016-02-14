@@ -20,64 +20,64 @@ Ruby is a great example of multi-paradigm programming language: it allows you to
 ## Installing
 Install this gem with or without bundler:  
 
-```
+{% highlight shell %}
 gem install functional-ruby
 gem 'functional-ruby'
-```
+{% endhighlight %}
 
 And then require it in your project:  
 
-```ruby
+{% highlight ruby %}
 require 'functional'
-```
+{% endhighlight %}
 
 ## Immutable data structures
 
-```ruby
+{% highlight ruby %}
 Address = Functional::Record.new(:city, :country, :street, :house) do
   mandatory :country, :city
   default :city, 'Moscow'
   default :country, 'Russia'
 end # <record Address :city=>"Moscow", :country=>"Russia", :street=>nil, :house=>nil>
-```
+{% endhighlight %}
 
 ## Immutable OpenStruct
 Immutable, thread-safe, write-once and read-only object variation of `OpenStruct`:
 
-```ruby
+{% highlight ruby %}
 name = Functional::ValueStruct.new firstname: 'Hodor', lastname: 'Hodor'
 name.get :firstname # Hodor
 name.lastname # Hodor
 name.firstname? # true
-```
+{% endhighlight %}
 
 ## Tuples
 Tuple is a data structure that is similar to array, but is immutable and has a fixed length.
 
-```ruby
+{% highlight ruby %}
 tuple = Functional::Tuple.new %w(one two three)
 tuple.at 0 # one
 tuple.last 0 # three
 tuple.fetch 4, 'four' # four
 tuple.tail.to_a # ['two', 'three']
 tuple.repeat(2).to_a.join ', ' # one, two, three, one, two, three
-```
+{% endhighlight %}
 
 ## Protocols
 Protocols are specifications to provide polymorphism and method-dispatch mechanism with strong typing, inspired by [Clojure protocols](http://clojure.org/protocols):
 
-```ruby
+{% highlight ruby %}
 Functional::SpecifyProtocol(:Address) do
   attr_accessor :city
   attr_accessor :country
   attr_accessor :street
   attr_accessor :house
 end
-```
+{% endhighlight %}
 
 ## Pattern matching
 
-```ruby
+{% highlight ruby %}
 # Pattern matching with type and protocol checking
 class AddressChecker
   include Functional::PatternMatching
@@ -104,7 +104,7 @@ class AddressChecker
     "Your zip is #{zip}"
   }.when { |addr| Type?(addr, Fixnum) }
 end
-```
+{% endhighlight %}
 
 
 ## Conclusion
