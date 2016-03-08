@@ -28,6 +28,9 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.0'
   gem 'capistrano-bundler'
   gem 'capistrano-jekyll'
+  gem 'pry'
+  gem 'awesome_print'
+  gem 'pry-bloodline'
 end
 
 source 'https://rails-assets.org' do
