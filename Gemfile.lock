@@ -118,7 +118,7 @@ GEM
       colorize (~> 0.7)
       pry (~> 0.10)
     rack (1.6.4)
-    rails-assets-jquery (2.2.2)
+    rails-assets-jquery (2.2.3)
     rails-assets-normalize-scss (3.0.3)
     rails-assets-rrssb (1.10.0)
     rake (11.1.2)
