@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bundler'
 gem 'jekyll'
-gem 'jekyll-assets', require: true
+gem 'jekyll-assets', '~> 2.1.3', require: true
 gem 'jekyll-tagging'
 gem 'jekyll-sitemap'
 gem 'kramdown'
