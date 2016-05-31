@@ -30,6 +30,7 @@ Session.vim
 /test/version_tmp/
 /tmp/
 vendor
+log
 
 ## Specific to RubyMotion:
 .dat*
