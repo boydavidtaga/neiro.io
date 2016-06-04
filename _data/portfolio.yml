@@ -187,7 +187,7 @@
 
   - name: Power Product
     id: power_product
-    url: http://neiro.io:3000
+    url: http://engines-honda.ru
     skills:
       - Ruby
       - Ruby on Rails
@@ -196,6 +196,7 @@
       - jQuery
       - DevOps
     date_start: Jun 2015
+    date_end: Jun 2016
     description: Full-stack Ruby on Rails development of commercial web application
 
   - name: Kinderly
