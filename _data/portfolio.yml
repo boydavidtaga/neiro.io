@@ -12,6 +12,7 @@
       - Coffeescript
       - jQuery
       - DevOps
+      - SQL
     date_start: Sep 2012
     date_end: Dec 2012
     source: https://github.com/ne1ro/smartdrum-website
@@ -28,6 +29,7 @@
       - Coffeescript
       - jQuery
       - DevOps
+      - SQL
     date_start: Feb 2013
     date_end: May 2013
     url: http://mp31.ru
@@ -59,6 +61,7 @@
       - Angular.js
       - Node.js
       - DevOps
+      - NoSQL
     date_start: Apr 2013
     date_end: Jun 2013
     source: https://github.com/ne1ro/kron-prototype
@@ -70,6 +73,8 @@
     skills:
       - Ruby
       - Ruby on Rails
+      - REST API
+      - SQL
     date_start: Jul 2013
     date_end: Feb 2014
     source: https://github.com/ne1ro/virtualacademy
@@ -139,6 +144,7 @@
       - Ruby on Rails
       - jQuery
       - Twitter Bootstrap
+      - SQL
     date_start: Jun 2014
     date_end: Jul 2014
     description: Full-stack Ruby on Rails app, website prototype, admin page
@@ -155,6 +161,8 @@
       - Angular.js
       - Twitter Bootstrap
       - DevOps
+      - REST API
+      - NoSQL
     url: http://installbundle.com/
     date_start: Jul 2014
     date_end: Jul 2015
@@ -165,7 +173,9 @@
     skills:
       - Ruby
       - Ruby on Rails
+      - REST API
       - DevOps
+      - SQL
     url: http://deeeds.com/
     date_start: Oct 2014
     date_end: Mar 2015
@@ -195,8 +205,11 @@
       - Coffeescript
       - jQuery
       - DevOps
+      - SQL
+      - Elasticsearch
+      - NoSQL
     date_start: Jun 2015
-    date_end: Jun 2016
+    date_end: Aug 2016
     description: Full-stack Ruby on Rails development of commercial web application
 
   - name: Kinderly
@@ -210,10 +223,10 @@
       - Coffeescript
       - jQuery
       - Backbone
+      - SQL
     date_start: Jun 2015
     date_end: Jan 2016
     description: ROR-based CMS development of online store
-
 
   - name: AzbukaHotels
     id: azbuka_hotels
@@ -226,6 +239,20 @@
       - Coffeescript
       - Backbone
       - Marionette
+      - SQL
     date_start: Nov 2015
     date_end: Mar 2016
     description: Full-stack Ruby on Rails development, bugfixes, refactoring
+
+  - name: FlatStack
+    id: flatstack
+    url: https://flatstack.com/
+    skills:
+      - Ruby
+      - Ruby on Rails
+      - DevOps
+      - SQL
+      - REST API
+      - Elixir
+    date_start: Mar 2016
+    description: Full-stack Ruby on Rails development, testing, deployment
