@@ -78,3 +78,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Ansible ###
+# Ansible retry files
+*.retry
+
+# Test driven development on Ansible with Molecule, Testinfra and pytest
+hosts
+.cache/
+.molecule/
+.tox/
+__pycache__/
+tests/roles
+*.pyc
