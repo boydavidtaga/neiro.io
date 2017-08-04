@@ -7,12 +7,12 @@ li.tag
   float: left
   margin: .5em 2.5em 0 -1.5em
   padding: .125em .25em .125em .5em
-  background: $blue
+  background: $red
   color: white
   @include border-right-radius(.25em)
 
   &:hover
-    @include color-transition($blue + #777)
+    @include color-transition($red + #777)
 
   &:before, &:after
     position: absolute
@@ -22,7 +22,7 @@ li.tag
     top: 0
     left: -.69em
     border-style: solid
-    border-color: transparent $blue transparent transparent
+    border-color: transparent $red transparent transparent
     border-width: .7em .7em .77em 0
 
   &:after
