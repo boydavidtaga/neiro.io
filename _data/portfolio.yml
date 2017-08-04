@@ -252,7 +252,24 @@
       - Ruby on Rails
       - DevOps
       - SQL
+      - PostgreSQL
       - REST API
       - Elixir
+      - Phoenix
+      - AWS
     date_start: Mar 2016
+    date_end: Mar 2017
     description: Full-stack Ruby on Rails development, testing, deployment
+
+  - name: Top Secret Elixir Project
+    id: elixir
+    skills:
+      - Elixir
+      - Phoenix
+      - Ruby
+      - DevOps
+      - SQL
+      - REST API
+      - PostgreSQL
+    date_start: Mar 2017
+    description: Back-end, DevOps, Elixir development
