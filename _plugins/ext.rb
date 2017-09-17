@@ -2,6 +2,7 @@ require 'jekyll-assets'
 require 'jekyll/tagging'
 require 'jekyll-sitemap'
 require 'jekyll-feed'
+require 'jekyll-crosspost-to-medium'
 require 'susy'
 require 'bundler/setup'
 

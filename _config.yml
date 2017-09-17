@@ -16,6 +16,9 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+jekyll-crosspost_to_medium:
+  enabled: true
+  status: draft
 
 exclude:
   - bower.json

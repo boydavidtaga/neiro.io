@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Building dynamic queries with Ecto
+crosspost_to_medium: true
 tags: [programming, elixir, ecto, databases]
 ---
 
 [Ecto](https://github.com/elixir-ecto/ecto) is the most popular, robust and solid solution to work with databases in **Elixir** ecosystem. Ecto is not ORM, ODM nor *Repository patern* library. *Ecto* is just a wrapper for common constructions to work with databases, nothing less and nothing more.
 
-**Ecto.Query** is the core module for operations with database queries. It allow us to easily build any queries with predefined conditions that we wanted.
+**Ecto.Query** is the core module for operations with database queries. It allows us to easily build any queries with predefined conditions that we wanted.
 
 But what if we want to build *really* dynamic query? The common case can be filtering by list of attributes.
 
