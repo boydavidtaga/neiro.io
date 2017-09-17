@@ -90,3 +90,5 @@ hosts
 __pycache__/
 tests/roles
 *.pyc
+
+.jekyll-crosspost-to-medium
