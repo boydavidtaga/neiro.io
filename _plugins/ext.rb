@@ -1,8 +1,12 @@
 require 'jekyll-assets'
 require 'jekyll/tagging'
 require 'jekyll-sitemap'
+
+unless ENV.fetch("JEKYLL_ENV", "dev") == "production" do
+  require 'jekyll-crosspost-to-medium'
+end
+
 require 'jekyll-feed'
-require 'jekyll-crosspost-to-medium'
 require 'susy'
 require 'bundler/setup'
 
