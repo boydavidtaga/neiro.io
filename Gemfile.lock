@@ -91,6 +91,8 @@ GEM
     jekyll-sitemap (0.10.0)
     jekyll-tagging (1.0.1)
       ruby-nuggets
+    jekyll-time-to-read (0.1.2)
+      jekyll
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
     json (2.0.1)
@@ -180,6 +182,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-sitemap
   jekyll-tagging
+  jekyll-time-to-read
   json
   kramdown
   pry

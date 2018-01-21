@@ -16,6 +16,7 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'uglifier'
 gem 'json'
 gem 'jekyll-feed'
+gem 'jekyll-time-to-read'
 gem 'jekyll-crosspost-to-medium'
 
 group :development do

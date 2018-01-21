@@ -55,4 +55,5 @@ assets:
   gzip: [ text/css, application/javascript, image/jpeg, image/png ]
 
 gems:
+  - jekyll-time-to-read
   - jekyll-assets

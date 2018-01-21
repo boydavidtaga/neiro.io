@@ -13,6 +13,7 @@ title: Web development, functional programming
 
     <div class="date-container">
       <p>{{ post.date | | date: '%d %B, %Y' }}</p>
+      <p><i> Reading time: {{ post.content | reading_time_as_i }} </i></p>
     </div>
 
     <content>
