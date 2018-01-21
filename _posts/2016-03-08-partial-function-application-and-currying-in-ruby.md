@@ -68,7 +68,7 @@ What if we want to multiply more than two arguments?
 To prevent this, we can change multiply function and use *Proc#curry* method:
 
 {% highlight ruby %}
-  multiply = -> (head, *tail) { head || 1 * tail.inject(1, &:*) }
+  multiply = -> (head, *tail) { head * tail.inject(1, &:*) }
   multiply.curry.(2, 2, 2) # 8
   multiply.curry.(2, 3, 7) # 42
 {% endhighlight %}
