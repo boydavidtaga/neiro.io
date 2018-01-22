@@ -1,21 +1,20 @@
 ---
 layout: post
 title: PostgreSQL full-text search using Ecto
-crosspost_to_medium: false
+crosspost_to_medium: true
 tags: [programming, elixir, ecto, databases, postgresql]
 ---
 
+PostgreSQL is one of the most popular, stable and common relational database. It's widely used in Elixir infrastructure and has a great integration with Ecto library.
 
-PostgreSQL is one of the most popular, used and common relational database. It's widely used in Elixir infrastructure and has a great integration with Ecto library.
-
-If you're into web development you can often face the search problem. You have a large stable database, you have a tons of useful information, great tools, but your users desire to find something by arbitrary questions. You can't use your favourite plain `SELECT  ... WHERE ... ` queries because you need to search for the words, not columns or records.
+If you're into web development you can often face the search problem. You have a large stable database, you have tons of useful information, great tools, but your users desire to find something by arbitrary questions. You can't use your favourite plain SELECT  ... WHERE ...  queries because you need to search for the words, not columns or records.
 
 This if what the full text search stands for.
 
-Fortunately, PostgreSQL has built-in support of the full-text search. It allows you to parse your data into `tokens`, convert these tokens to `lexemes` - normalised forms of words - and, finally, search and make search optimisations.
+Fortunately, PostgreSQL has a built-in support of the full-text search. It allows you to parse your data into tokens, convert these tokens to lexemes - normalised forms of words - and, finally, search and make search optimisations.
 
 ## Ecto migration to use the search
-Let's start by creating a migration. Create a new Elixir project and the new migration in `priv/repo/migrations`:
+Let's start by creating a migration. Create a new Elixir project and a new migration in priv/repo/migrations:
 
 ```elixir
 defmodule App.Repo.Migrations.IntroducePgSearch do
@@ -35,11 +34,11 @@ defmodule App.Repo.Migrations.IntroducePgSearch do
 end
 ```
 
-As you can see, we will use PostgreSQL extension called `pg_trgm`.  Run `ecto.migrate` to execute this migration. Now you can use trigram indices and trigram matching for your full-text search.
+As you can see, we will use PostgreSQL extension called pg_trgm.  Run ecto.migrate to execute this migration. Now you can use trigram indices and trigram matching for your full-text search.
 
 ## Create a search module
 
-Our next step will be creating a search module. Let's suppose that you already have an `User` schema with username, first name and last name defined. In that case we can implement a simple search query that can be used in your contexts or controllers:
+Our next step will be creating a search module. Let's suppose that you already have a User schema with a username, first name and last name defined. In that case we can implement a simple search query that can be used in your contexts or controllers:
 
 ```elixir
 defmodule App.Users.Search do
@@ -55,7 +54,7 @@ defmodule App.Users.Search do
 end
 ```
 
-As you can see here, we're defining the `run` function that will accept another `Ecto.Query` with the search term and will return `Ecto.Query` though. 
+As you can see here, we're defining the run function that will accept another Ecto.Query with the search term and will return Ecto.Query though. 
 
 We need to escape all of non-words characters from user's input:
 
@@ -63,13 +62,13 @@ We need to escape all of non-words characters from user's input:
 String.replace(term, ~r/\W/u, "")
 ```
 
-Also we need to allow to search by prefix - beginning of the word. Let's add `:*` to our search term:
+Also we need to allow to search by prefix - beginning of the word. Let's add :* to our search term*:
 
 ```elixir
 defp prefix_search(term), do: String.replace(term, ~r/\W/u, "") <> ":*"
 ```
 
-Now we need to implement the search by using Ecto's `fragment` macro and `to_tsquery` PostgreSQL function:
+Now we need to implement the search by using Ecto's fragment macro and to_tsquery PostgreSQL function:
 
 ```elixir
 def run(query, search_term) do
@@ -84,11 +83,12 @@ def run(query, search_term) do
   end
 ```
 
-Let's take a look at implementation. At first, we need to compose a search token by joining columns: 
+Let's take a look at the implementation. At first, we need to compose a search token by joining columns: 
+
 ```elixir
-username || ' ' || first_name || ' ' || coalesce(last_name, ' '))
-```.
-Created `tsvector` will be tested by operator `@@` with `tsquery` and will return the result if the matching was sucessful.
+to_tsvector('english', username || ' ' || first_name || ' ' || coalesce(last_name, ' ')) @@ to_tsquery(?)
+```
+Created tsvector will be tested by operator @@ with tsquery and will return the result if the matching was sucessful.
 
 But this result won't be as fast as we wanted. Let's suppose that we have *11K* users:
 
@@ -106,7 +106,6 @@ Planning time: 1.640 ms
 Execution time: 62.235 ms
 ###
 ```
-
 
 ## Create an index
 
@@ -136,7 +135,7 @@ defmodule App.Repo.Migrations.IntroducePgSearch do
 end
 ```
 
-Now run `mix do ecto.rollback, eco.migrate` and try to run the search:
+Now run mix do ecto.rollback, eco.migrate and try to run the search:
 
 ```elixir
 User |> App.Users.Search.run("meta") |> Repo.explain
@@ -152,12 +151,11 @@ Execution time: 0.457 ms
 ###
 ```
 
-Voila! Now that's the speed we wanted. Our users will be so satisfied with this search!
+Voila! Now that's the speed we wanted. Our users will be so happy with this search!
 
 ## Conclusion
 
 What's next? 
-You can try to use the functionality of `pg_trgm` module, search for similar words or make the search not just prefix-only. See the docs for [PostgreSQL full-text search](https://www.postgresql.org/docs/10/static/textsearch.html) and for [trigram](https://www.postgresql.org/docs/10/static/pgtrgm.html) .
-
+You can try using the functionality of pg_trgm module, search for similar words or making the search not just prefix-only. See the docs for [PostgreSQL full-text search](https://www.postgresql.org/docs/10/static/textsearch.html) and [trigram](https://www.postgresql.org/docs/10/static/pgtrgm.html) .
 
 Happy hacking!
