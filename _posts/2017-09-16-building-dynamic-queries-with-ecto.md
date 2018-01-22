@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building dynamic queries with Ecto
-crosspost_to_medium: true
+crosspost_to_medium: false
 tags: [programming, elixir, ecto, databases]
 ---
 
