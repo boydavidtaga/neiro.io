@@ -4,7 +4,7 @@ GEM
   specs:
     addressable (2.3.8)
     awesome_print (1.7.0)
-    breakpoint (2.5.0)
+    breakpoint (2.7.1)
       sass (~> 3.3)
       sassy-maps (< 1.0.0)
     capistrano (3.4.1)
@@ -163,7 +163,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  breakpoint (~> 2.5.0)
+  breakpoint (~> 2.7.1)
   bundler
   capistrano (~> 3.4.1)
   capistrano-bundler
