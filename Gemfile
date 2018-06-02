@@ -7,7 +7,7 @@ gem 'jekyll-tagging'
 gem 'jekyll-sitemap'
 gem 'kramdown'
 gem 'rouge'
-gem 'sass'
+gem 'sass', '~> 3.4.0'
 gem 'sass-globbing', require: true
 gem 'compass'
 gem 'susy'
