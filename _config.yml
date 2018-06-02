@@ -54,6 +54,6 @@ assets:
   css_compressor: sass
   gzip: [ text/css, application/javascript, image/jpeg, image/png ]
 
-gems:
+plugins:
   - jekyll-time-to-read
   - jekyll-assets
