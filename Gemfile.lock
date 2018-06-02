@@ -223,6 +223,7 @@ DEPENDENCIES
   rails-assets-jquery!
   rails-assets-normalize-scss!
   rails-assets-rrssb!
+  rake
   rouge
   sass (~> 3.4.0)
   sass-globbing

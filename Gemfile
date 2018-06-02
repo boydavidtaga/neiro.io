@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
+gem 'rake'
 gem 'jekyll'
 gem 'jekyll-assets', '~> 2.1.3', require: true
 gem 'jekyll-tagging'
