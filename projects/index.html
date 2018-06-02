@@ -6,7 +6,7 @@ title: My projects
 <ul class="portfolio-gallery">
   {% assign projects = site.data.portfolio | reverse %}
   {% for project in projects %}
-    <li id="{{ project.id }}" class="slide" style="background-image: url({{ project.id | prepend: 'projects/' | append: '/index.jpg' | asset_path }})">
+    <li id="{{ project.id }}" class="slide" style="background-image: url(assets/{{ project.id | prepend: 'projects/' | append: '/index.jpg'}})">
       <div class="container">
         <div class="date-start">
           <span class="text-left">{{ project.date_start }}</span>
