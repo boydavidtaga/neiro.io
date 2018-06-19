@@ -91,4 +91,4 @@ __pycache__/
 tests/roles
 *.pyc
 
-.jekyll-crosspost-to-medium
+.jekyll-crosspost_to_medium
