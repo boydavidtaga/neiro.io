@@ -5,21 +5,21 @@ crosspost_to_medium: true
 tags: [programming, elixir, code, ci, circleci, devops]
 ---
 
-Elixir programming language has gained a popularity and now it is supported at many platforms,
+Elixir programming language has gained  popularity and now it is supported at many platforms,
 including plenty of CI services. In this article we will see how we can
-achieve seamless and _(almost)_ deadly simple continious integration by using CircleCI
+achieve seamless and _(almost)_ dead simple continious integration by using CircleCI
 in our Elixir projects.
 
 ## CircleCI 2.0
 
-[CircleCI](https://circleci.com) is one of most popular and user-friendly
+[CircleCI](https://circleci.com) is one of the most popular and user-friendly
 continious integration solutions. It supports many programming languages and tools,
 including Elixir and Erlang/OTP.
 
-CircleCI is entirely free when it comes to open-source GitHub repositories, but also
-provides free 1500 minutes at month for any private repos.
+CircleCI is entirely free when it comes to open-source GitHub repositories, but it also
+provides free 1500 minutes a month for any private repos.
 
-Starting from version 2.0 CircleCI can create jobs based on any images from
+Starting version 2.0 CircleCI can create jobs based on any images from
 [DockerHub](https://hub.docker.com/). This feature makes possible to build any
 programming language or platform that can be placed in Docker image.
 
@@ -50,21 +50,21 @@ jobs:  # basic units of work in a run
 ```
 
 As you can see here, we are declaring the `build` continious integration job.
-We will basically using the Elixir 1.6 with PostgreSQL 9.6 to run
+Basically we will use the Elixir 1.6 with PostgreSQL 9.6 to run
 tests on the `app_test` database. After that we will checkout source code base to
-fetch our recent changes into build. `mix local` tasks are also necessary in order
+fetch our recent changes into the build. `mix local` tasks are also necessary in order
 to use any of *Mix* tasks later.
 
 ## Running tests and code quality
 
-All we want to run all common continious integration steps like:
+All of us want to run all common continious integration steps such as:
 
 * Fetch dependencies and compile application
 * Run code quality tools and checks (_you can read more about it [here](https://neiro.io/2018/04/28/elixir-code-quality-tools-and-checks.html))_
 * Execute all tests to make sure that our build is successful and infallible
 * Run heavy and bulky static analysis tools
 
-Also we want to make our builds as fast as possible, so we defenitely need caching.
+Also we want to make our builds as fast as possible, so we definitely need caching.
 Let's continue with our config and implement the steps above:
 
 {% raw %}
@@ -120,16 +120,16 @@ Let's continue with our config and implement the steps above:
 ```
 {% endraw %}
 
-From now you can start new builds by signing up into CircleCI as it will run the
+Now you can start new builds by signing up into CircleCI as it will run the
 configuration and steps from your config. Every commit in any branch will run the
-build job and you will know if something wrong with your code.
+build job and you will know if something is wrong with your code.
 
 ## Deploying
 
-However, only one build job is not enough even for the simplest CI process. Most often
+However, having only one build job is not enough even for the simplest CI process. Most often
 we need to make a staging/production release by using [Distillery](https://github.com/bitwalker/distillery).
 
-Let's continiue to fill up our configuration file by adding a new `deploy` job:
+Let's continue filling up our configuration file by adding a new `deploy` job:
 
 ```yaml
   deploy:
@@ -159,10 +159,10 @@ Let's continiue to fill up our configuration file by adding a new `deploy` job:
       - run: tar -zcvf $CIRCLE_SHA1.tar.gz bin appspec.yml VERSION _build/$MIX_ENV/rel/app/releases/$(cat VERSION)/app.tar.gz
 ```
 
-This will be enough to create a separate deploy job that will run on separate Docker
+This will be enough to create a separate deploy job that will run on  a separate Docker
 image. However, we will need to run it only on develop and master branches in order
 to upload staging/production releases accordingly. We can achieve this by using
-CircleCI workflow and providing simple configuration at the bottom of our config file:
+CircleCI workflow and providing a simple configuration at the bottom of our config file:
 
 ```yaml
 workflows:
@@ -180,7 +180,7 @@ workflows:
                 - master
 ```
 
-After that you are free to upload built release to any server or any platform you want.
+After that you are free to upload the built release to any server or any platform you want.
 You can use Edeliver, Ansible, Chef, Docker - it's up to you.
 
 ## Conclusion
@@ -189,6 +189,6 @@ As you can see above, it's not so hard to build and deploy Elixir applications w
 CircleCI 2.0. This platform is flexible and fast enough to make your continious integration
 bright and shiny.
 
-If you want to discover even more then let's read [CircleCI 2.0 documentation](https://circleci.com/docs/2.0/) and [Elixir Language Guide](https://circleci.com/docs/2.0/language-elixir/).
+If you want to discover even more on the topic then let's read [CircleCI 2.0 documentation](https://circleci.com/docs/2.0/) and [Elixir Language Guide](https://circleci.com/docs/2.0/language-elixir/).
 
-Happy hacking, anyone!
+Happy hacking, everyone!
